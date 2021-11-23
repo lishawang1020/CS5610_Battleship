@@ -1,0 +1,12 @@
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+}
+
+.board-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    float: left;
+}

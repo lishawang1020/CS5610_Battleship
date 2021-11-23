@@ -1,0 +1,21 @@
+#square {
+  height: 30px;
+  width: 30px;
+  border: 1px solid darkgray;
+}
+
+#square:hover {
+  opacity: .7;
+}
+
+.blueTile {
+    background: skyblue;
+}
+
+.greenTile {
+    background:mediumseagreen;
+}
+
+.redTile {
+    background: tomato;
+}
