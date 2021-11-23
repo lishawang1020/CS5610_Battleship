@@ -66,6 +66,7 @@ export default function createGameReducer(user = "") {
         state[action.x][action.y] = "Y";
       } else if (value === "") {
         state[action.x][action.y] = "X";
+        // value is "X" or "Y", the tile has been hit brefore
       } else {
         if (user === "player") {
           let newX, newY;
@@ -75,7 +76,7 @@ export default function createGameReducer(user = "") {
             if (state[newX][newY] === "S") {
               state[newX][newY] = "Y";
               break;
-            } else if (state[newX][newY] === "Y") {
+            } else if (state[newX][newY] === "") {
               state[newX][newY] = "X";
               break;
             }

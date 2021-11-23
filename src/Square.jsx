@@ -15,8 +15,14 @@ export function Square(props) {
     tileColor = "greenTile";
     sign = "Y";
   } else {
-    tileColor = "blueTile";
-    sign = "";
+    if (symbol === "S" && user === "player") {
+      tileColor = "blackTile";
+      sign = "";
+    }
+    else {
+      tileColor = "blueTile";
+      sign = "";
+    }
   }
 
   const dispatch = useDispatch();
